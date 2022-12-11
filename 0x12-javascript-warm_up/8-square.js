@@ -1,9 +1,11 @@
 #!/usr/bin/node
-const sqr = process.argv[2];
-if (isNaN(sqr)) {
+const size = Math.floor(Number(process.argv[2]));
+if (isNaN(size)) {
   console.log('Missing size');
 } else {
-  for (let x = 0; x < sqr; x++) {
-    console.log('X'.repeat(sqr));
+  for (let r = 0; r < size; r++) {
+    let row = '';
+    for (let c = 0; c < size; c++) row += 'X';
+    console.log(row);
   }
 }

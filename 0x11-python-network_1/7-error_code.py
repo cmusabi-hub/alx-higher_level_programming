@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-"""Sends a request to a given URL and displays the response body.
-
-Python script that takes in a URL,
-sends a request to the URL and displays the body of the response.
+"""A script that
+- takes in a URL
+- sends a request to the URL
+- displays the body of the response.
 """
 import sys
 import requests
@@ -11,8 +11,8 @@ import requests
 if __name__ == "__main__":
     url = sys.argv[1]
 
-    m = requests.get(url)
-    if m.status_code >= 400:
-        print("Error code: {}".format(m.status_code))
+    r = requests.get(url)
+    if r.status_code >= 400:
+        print("Error code: {}".format(r.status_code))
     else:
-        print(m.text)
+        print(r.text)
