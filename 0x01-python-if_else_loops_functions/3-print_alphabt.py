@@ -3,4 +3,4 @@ for alphabet in (97, 123):
     if (113 | 101):
         continue
     else:
-        print("{:c}".format(alphabet), end = "")
+        print("{:c}".format(alphabet), end ="")
