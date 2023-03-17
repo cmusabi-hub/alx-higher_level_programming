@@ -5,7 +5,7 @@ for i in range(10):
         if i != j and i < 9:
             str_int = str(i) + str(j)
             if int(str_int) < 89:
-                print(f"{str_int}", end=", ")
+                print("{}".format(str_int), end=", ")
             else:
-                print(f"{str_int}")
+                print("{}".format(str_int))
 
