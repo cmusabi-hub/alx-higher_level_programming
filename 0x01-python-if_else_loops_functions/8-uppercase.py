@@ -5,6 +5,3 @@ def uppercase(str):
             print(chr(ord(_char) - 32), end='')
         else:
             print(_char, end='')
-    print()
-
-
