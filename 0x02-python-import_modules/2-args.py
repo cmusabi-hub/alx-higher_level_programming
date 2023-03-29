@@ -2,6 +2,17 @@
 
 from sys import argv
 
+def main():
+    argument  = len(argv) - 1
+
+    if argument == 0:
+           print("0 arguments.")
+    elif argument == 1:
+        print("1 argument:")
+        print("{}: {}".format(argument, argv[argument]))
+    else:
+        print("{} arguments:".format(argument))
+        for i in range(1, argument):
+            print("{} : {}".format(i, argv[i]))
 if __name__ == "__main__":
-    for i in argv[j]:
-        print("{:d} : {:c}".format(i, j))
+    main()
