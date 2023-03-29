@@ -12,6 +12,6 @@ def main():
     else:
         print("{} arguments:".format(argument))
         for i in range(1, argument + 1):
-            print("{} : {}".format(i, argv[i]))
+            print("{}: {}".format(i, argv[i]))
 if __name__ == "__main__":
     main()
