@@ -1,10 +1,8 @@
 #!/usr/bin/python3
-
 from sys import argv
 
 def main():
     argument  = len(argv) - 1
-
     if argument == 0:
            print("0 arguments.")
     elif argument == 1:
