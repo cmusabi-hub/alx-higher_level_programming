@@ -12,7 +12,7 @@ def main():
         print("{}: {}".format(argument, argv[argument]))
     else:
         print("{} arguments:".format(argument))
-        for i in range(1, argument):
+        for i in range(1, argument + 1):
             print("{} : {}".format(i, argv[i]))
 if __name__ == "__main__":
     main()
