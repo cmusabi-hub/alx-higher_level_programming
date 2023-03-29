@@ -3,10 +3,11 @@
 
 def main():
     import hidden_4
+
     direc = dir(hidden_4)
-    for i in range(len(direc)):
-        if direc[0:2] != "__":
-            print(direc)
+    for mod in direc:
+        if mod[0:2] != "__":
+            print(mod)
 
 
 if __name__ == "__main__":
