@@ -7,8 +7,6 @@ def main():
 
     sign = {"+":add, "-":sub, "-":mul, "/":div}
     argument = len(argv) - 1
-    #a = int(argv[1])
-    #b = int(argv[3])
 
 
     if argument != 3:
