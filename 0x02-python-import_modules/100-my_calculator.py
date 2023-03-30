@@ -5,7 +5,7 @@ def main():
     from sys import argv
     from calculator_1 import add, sub, mul, div
 
-    sign = {"+" : add, "-" : sub, "*" : mul, "/" : div}
+    sign = {"+": add, "-": sub, "*": mul, "/": div}
     argument = len(argv) - 1
 
     if argument != 3:
