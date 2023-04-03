@@ -2,6 +2,6 @@
 
 def element_at(my_list, idx):
     for i in my_list:
-        if idx < 0 | idx > len(mylist):
+        if idx < 0 | idx > len(mylist) - 1:
             return None
         return(my_list[idx])
