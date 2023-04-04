@@ -1,0 +1,10 @@
+#!/usr/bin/python3
+
+
+def add_tuple(tuple_a=(), tuple_b=()):
+    new_tup = ()
+    for i in range(len(tuple_a)):
+        for j in range(len(tuple_b)):
+            if i == j:
+                new_tup += (tuple_a[i] + tuple_b[j])
+    retun new_tup
