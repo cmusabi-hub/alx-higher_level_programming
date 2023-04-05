@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+
 def multiple_returns(sentence):
     string = ()
     if sentence == None:
