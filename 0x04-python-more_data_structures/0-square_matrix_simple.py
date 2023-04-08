@@ -3,7 +3,7 @@
 
 def square_matrix_simple(matrix=[]):
     return ([list(map(lambda i: i**2, row)) for row in matrix])
-""" new_matrix = []
+"""new_matrix = []
     for row in range(len(matrix)):
         row_matrix = []
         for column in range(len(matrix[row])):
