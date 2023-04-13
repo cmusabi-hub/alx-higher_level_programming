@@ -13,4 +13,3 @@ def weight_average(my_list=[]):
             score += column[0]
         average = ssum / score
     return average
-
