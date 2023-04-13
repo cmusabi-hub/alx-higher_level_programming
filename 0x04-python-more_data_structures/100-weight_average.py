@@ -2,4 +2,5 @@
 
 
 def weight_average(my_list=[]):
-    return (map(lambda score, weight: (score * weight)/, sset[0], sset[1]) for sset in my_list)
+    if my_list == [] or len(my_list) == 0:
+        return 0
