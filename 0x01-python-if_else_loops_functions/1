@@ -1,0 +1,5 @@
+#!/usr/bin/python3
+for outter_loop in range(9):
+    for inner_loop in range(10):
+        if (inner_loop > outter_loop):
+            print("{}{}".format(outter_loop, inner_loop), end=", ")
