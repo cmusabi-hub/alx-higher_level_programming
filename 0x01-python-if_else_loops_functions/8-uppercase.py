@@ -6,5 +6,5 @@ def uppercase(str):
         if ord(_char) in range(ord("a"), ord("z") + 1):
             result += chr(ord(_char) - 32)
         else:
-            result += _char          
+            result += _char
     print("{}".format(result))
