@@ -1,17 +1,14 @@
 #!/usr/bin/python3
+import hidden_4
+
+def main():
+    direc = dir(hidden_4)
+    for mod_ in direc:
+        if mod_[0:2] == "__":
+            continue
+        else:
+            print("{}".format(mod_))
 
 
-def __init__():
-    return True
-
-
-def my_secret_santa():
-    return True
-
-
-def print_school():
-    return True
-
-
-def print_hidden():
-    return True
+if __name__ == "__main__":
+    main()
