@@ -8,5 +8,5 @@ def safe_print_list_integers(my_list=[], x=0):
             total_elements += 1
         except (ValueError, TypeError):
             continue
-        print("")
+    print("")
     return (total_elements)
