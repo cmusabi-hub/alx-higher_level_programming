@@ -4,7 +4,7 @@
 
 class Square:
     """ Initialization of variables"""
-    def __init__(self, size = 0):
+    def __init__(self, size=0):
         """ Initialization of variable size
         the size should be integer type.
         """
