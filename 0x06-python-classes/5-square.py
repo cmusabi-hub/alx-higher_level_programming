@@ -3,6 +3,7 @@
 
 
 class Square:
+
     """Creating square class"""
     def __init__(self, size=0):
         """Initialization of variables size of the new square"""
@@ -26,9 +27,11 @@ class Square:
     def area(self):
         """Getting the area of the square"""
         return (self.__size * self.__size)
+
     def my_print(self):
+        """Prints a square with # sign"""
         if (self.__size == 0):
-            print ("")
+            print("")
         else:
             for row in range(self.__size):
                 print("#" * self.__size)
