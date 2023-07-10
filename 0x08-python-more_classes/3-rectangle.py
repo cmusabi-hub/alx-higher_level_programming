@@ -50,4 +50,6 @@ class Rectangle:
 
     def __str__(self):
         """Returns a string of created triangle using # sign"""
+        if (self.__height == 0 or self.__width == 0):
+            return ""
         return "\n".join(["#" * self.width for row in range(self.height)])
