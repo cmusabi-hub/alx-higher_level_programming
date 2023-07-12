@@ -54,7 +54,7 @@ class Rectangle:
 
     def __str__(self):
         """Prints the rectangle"""
-        return ("\n".join(["#" * self.__width
+        return ("\n".join([str(self.print_symbol) * self.__width
                            for row in range(self.__height)]))
 
     def __repr__(self):
