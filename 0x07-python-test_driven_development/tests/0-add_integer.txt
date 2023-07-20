@@ -53,6 +53,15 @@ Checking for Numbers passed as parameters
 	>>> add_integer(30.33, 14.3)
 	44
 
+--------------------------------------------------------------------
+Since b by default = 98 what if one parameter is passed
+--------------------------------------------------------------------
+
+::
+
+	>>> add_integer(12)
+	110
+
 ===============
 Non - Numbers
 ===============
