@@ -1,32 +1,39 @@
 ============================================
-How to use ``0-add_integer`` module
+How to use ``0-add_integer`` module.
 ============================================
-Usage of ``add_integer(...)``
+Usage of ``add_integer(...)``.
 --------------------------------------------
-Importing of the module
+Importing of the module.
 ==============================
-Importing ``add_integer(a, b=98)``
+Importing ``add_integer(a, b=98)``.
 --------------------------------------------
 ::
-::
+	>>> add_integer = __import__('0-add_integer').add_integer
 
 Documentation
 =============
 Checking if documentation is done in the module 
 ``0-add_integer``
------------------------------------------------
+------------------------------------------------------------------
 ::
+	>>> mod_ = __import__("0-add_integer").__doc__
+	>>> len(mod_) > 1
+	True
+
+Documentation of the function
+-------------------------------------------------------------------
 ::
+	>>> fun_t = __import__("0-add_integer").add_integer.__doc__
+	>>> len(fun_t) > 1
+	True
 
 Numbers
 ==============
 Checking for Numbers passed as parameters
 ---------------------------------------------
 ::
-::
-
 Non - Numbers
 ===============
 Checking for Other parameters passed as non numbers
 ----------------------------------------------------
-
+::
