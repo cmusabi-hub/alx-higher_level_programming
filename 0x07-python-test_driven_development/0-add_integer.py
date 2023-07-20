@@ -1,13 +1,13 @@
 #!/usr/bin/python3
+"""Defines integer addition"""
 
 def add_integer(a, b=98):
-    if isinstance(a, float):
-        a = int(a)
-    elif not isinstance(a, int):
+    """Return the integer addition of parameters and b.
+    Float arguments are typecasted to integers
+    Raises a TypeError if a or b is a non integer or non float.
+    """
+    if not isinstance(a, (float, int)):
         raise TypeError("a must be an integer")
-    elif (isinstance(b, float)):
-        b = int(b)
-    elif not isinstance(b, int):
+    if not (isinstance(b, (int, float))):
         raise TypeError("b must be an integer")
-    else:
-        return a + b
+    return (int(a) + int(b))

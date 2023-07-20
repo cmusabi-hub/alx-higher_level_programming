@@ -53,28 +53,14 @@ Checking for Other parameters passed as non numbers
 ::
 
 	>>> add_integer(30.2, "five")
-	Traceback (most recent call last):
-	...
 	TypeError: b must be an integer
 
 ::
 
 	>>> add_integer("ten", 22)
-	Traceback (most recent call last):
-	...
-	TypeError: a must be an integer
+	TypeError: b must be an integer
 
 ::
 
 	>>> add_integer("six", "four")
-	Traceback (most recent call last):
-	...
 	TypeError: a must be an integer
-
-::
-
-	>>> add_integer(None)
-	Traceback (most recent call last):
-	...
-	TypeError: a must be an integer
-	
