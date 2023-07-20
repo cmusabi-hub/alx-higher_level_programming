@@ -1,12 +1,16 @@
 ============================================
 How to use ``0-add_integer`` module.
 ============================================
+
 Usage of ``add_integer(...)``.
 --------------------------------------------
+
 Importing of the module.
 ==============================
+
 Importing ``add_integer(a, b=98)``.
 --------------------------------------------
+
 ::
 	>>> add_integer = __import__('0-add_integer').add_integer
 
@@ -15,6 +19,7 @@ Documentation
 Checking if documentation is done in the module 
 ``0-add_integer``
 ------------------------------------------------------------------
+
 ::
 	>>> mod_ = __import__("0-add_integer").__doc__
 	>>> len(mod_) > 1
@@ -22,6 +27,7 @@ Checking if documentation is done in the module
 
 Documentation of the function
 -------------------------------------------------------------------
+
 ::
 	>>> fun_t = __import__("0-add_integer").add_integer.__doc__
 	>>> len(fun_t) > 1
@@ -30,7 +36,8 @@ Documentation of the function
 Numbers
 ==============
 Checking for Numbers passed as parameters
----------------------------------------------
+-------------------------------------------------------------------
+
 ::
 	>>> add_integer = __import__('0-add_integer').add_integer
 	>>> add_integer(2, 8)
@@ -46,10 +53,13 @@ Checking for Numbers passed as parameters
 	>>> add_integer(30.33, 14.3)
 	44
 
+===============
 Non - Numbers
 ===============
+
 Checking for Other parameters passed as non numbers
 ----------------------------------------------------
+
 ::
 
 	>>> add_integer(30.2, "five")
@@ -77,4 +87,37 @@ Checking for Other parameters passed as non numbers
 	Traceback (most recent call last):
 	...
 	TypeError: a must be an integer
-	
+
+::
+
+	>>> add_integer(3.4, None)
+	Traceback (most recent call last):
+	...
+	TypeError: b must be an integer
+
+----------------------------------------------------------
+When a function has infinity is provided
+----------------------------------------------------------
+
+::
+
+	>>> add_integer(float('inf'))
+	Traceback (most recent call last):
+	...
+	OverflowError: cannot convert float infinity to integer
+
+::
+
+	>>> add_integer(56, float('inf'))
+	Traceback (most recent call last):
+	...
+	OverflowError: cannot convert float infinity to integer
+
+When a Nan numbers are provided
+
+::
+
+	>>> add_integer(2, float('nan'))
+	Traceback (most recent call last):
+	...
+	ValueError: cannot convert float NaN to integer
