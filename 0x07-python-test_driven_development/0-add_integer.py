@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Defines integer addition"""
 
+
 def add_integer(a, b=98):
     """Return the integer addition of parameters and b.
     Float arguments are typecasted to integers
