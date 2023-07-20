@@ -1,0 +1,32 @@
+============================================
+How to use ``0-add_integer`` module
+============================================
+Usage of ``add_integer(...)``
+--------------------------------------------
+Importing of the module
+==============================
+Importing ``add_integer(a, b=98)``
+--------------------------------------------
+::
+::
+
+Documentation
+=============
+Checking if documentation is done in the module 
+``0-add_integer``
+-----------------------------------------------
+::
+::
+
+Numbers
+==============
+Checking for Numbers passed as parameters
+---------------------------------------------
+::
+::
+
+Non - Numbers
+===============
+Checking for Other parameters passed as non numbers
+----------------------------------------------------
+
