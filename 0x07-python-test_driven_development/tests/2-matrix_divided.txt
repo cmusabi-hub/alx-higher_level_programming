@@ -1,0 +1,52 @@
+============================================================================
+Documentation file on how to use ``2-matrix_divided``
+============================================================================
+
+============================================================================
+USAGE - FUNCTION ``matrix_divided(matrix, div)``
+============================================================================
+============================================================================
+IMPORTING MODULE
+============================================================================
+::
+
+	>>> matrix_divided = __import__("2-matrix_divided").matrix_divided
+
+============================================================================
+DOCUMENTATION OF THE MODULE
+============================================================================
+
+::
+	>>> doc_mod = __import__("2-matrix_divided").__doc__
+	>>> len(doc_mod) > 1
+	True
+
+::
+	>>> doc_func = __import__("2-matrix_divided").matrix_divided.__doc__
+	>>> len(doc_func) > 1
+	True
+
+=====================================================================
+Checking if list integers are floats or integers
+=====================================================================
+
+::
+
+	>>> matrix_divided = __import__("2-matrix_divided").matrix_divided
+	>>> matrix = [["four", 'three', 9], [3, 6, 8], [3, 18, 6]]
+	>>> matrix_divided(matrix, 3)
+	Traceback (most recent call last):
+	...
+	TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+============================================================================
+Checking if the rows are all equal
+============================================================================
+
+::
+
+	>>> matrix = [[77, 88, 54, 4565], [455, 45], [45, 54, 89, 55, 45]]
+	>>> matrix_divided(matrix, 5)
+	Traceback (most recent call last):
+	...
+	TypeError: Each row of the matrix must have the same size
