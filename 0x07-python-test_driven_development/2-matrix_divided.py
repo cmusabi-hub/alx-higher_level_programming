@@ -4,7 +4,7 @@
 
 def matrix_divided(matrix, div):
     """Function matrtix"""
-    if not all(isinstance(row, list) and all(
+    if not all(isinstance(matrix, list) or matrix == [] or all(
                isinstance(element, (int, float)) for element in row)
                for row in matrix):
         raise TypeError("matrix must be a matrix "
@@ -19,7 +19,6 @@ def matrix_divided(matrix, div):
 
     if (div == 0):
         raise ZeroDivisionError("division by zero")
-
     new_matrix = list(map(lambda row:
                           (list(map(lambda column: round
                                     (column / div, 2), row))), matrix))

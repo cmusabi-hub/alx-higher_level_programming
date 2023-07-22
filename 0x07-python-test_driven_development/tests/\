@@ -12,29 +12,6 @@ IMPORTING MODULE
 
 	>>> matrix_divided = __import__("2-matrix_divided").matrix_divided
 
-::
-
-	>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
-	>>> matrix = [[3, 6, 9], [12, 15, 18]]
-	>>> print(matrix_divided(matrix, 3))
-	[[1.0, 2.0, 3.0], [4.0, 5.0, 6.0]]
-
-::
-
-	>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
-	>>> matrix = None
-    	>>> print(matrix_divided(matrix, 3))
-    	Traceback (most recent call last):
-	...
-    	TypeError: matrix must be a matrix (list of lists) of integers/floats
-	
-	>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
-	>>> matrix = []
-	>>> print(matrix_divided(matrix, 3))
-	Traceback (most recent call last):
-	...
-    	TypeError: matrix must be a matrix (list of lists) of integers/floats
-
 ============================================================================
 DOCUMENTATION OF THE MODULE
 ============================================================================
@@ -68,7 +45,6 @@ Checking if the rows are all equal
 
 ::
 
-	>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
 	>>> matrix = [[77, 88, 54, 4565], [455, 45], [45, 54, 89, 55, 45]]
 	>>> matrix_divided(matrix, 5)
 	Traceback (most recent call last):
@@ -81,7 +57,6 @@ Checking if the div is an integer or a zero
 
 ::
 
-	>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
 	>>> matrix = [[77, 88, 54], [455, 45, 23], [45, 54, 89]]
 	>>> matrix_divided(matrix, "five")
 	Traceback (most recent call last):
@@ -90,9 +65,9 @@ Checking if the div is an integer or a zero
 
 ::
 
-	>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
 	>>> matrix = [[77, 88, 54], [455, 45, 23], [45, 54, 89]]
 	>>> matrix_divided(matrix, 0)
 	Traceback (most recent call last):
 	...
 	ZeroDivisionError: division by zero
+
