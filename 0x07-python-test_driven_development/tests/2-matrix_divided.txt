@@ -50,3 +50,23 @@ Checking if the rows are all equal
 	Traceback (most recent call last):
 	...
 	TypeError: Each row of the matrix must have the same size
+
+============================================================================
+Checking if the div is an integer or a zero
+============================================================================
+
+::
+
+	>>> matrix = [[77, 88, 54], [455, 45, 23], [45, 54, 89]]
+	>>> matrix_divided(matrix, "five")
+	Traceback (most recent call last):
+	...
+	TypeError: div must be a number
+
+::
+
+	>>> matrix = [[77, 88, 54], [455, 45, 23], [45, 54, 89]]
+	>>> matrix_divided(matrix, 0)
+	Traceback (most recent call last):
+	...
+	ZeroDivisionError: division by zero
