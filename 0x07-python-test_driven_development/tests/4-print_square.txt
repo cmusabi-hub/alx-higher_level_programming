@@ -1,0 +1,68 @@
+============================================================================
+DOCUMENTATION OF ``4-print_square`` MODULE
+============================================================================
+============================================================================
+USAGE OF ``print_square(size)`` FUNCTION
+============================================================================
+
+============================================================================
+CHECKING FOR DOCUMENTATION OF THE MODULE
+============================================================================
+
+::
+
+        >>> doc_mod = __import__("4-print_square").__doc__
+        >>> len(doc_mod) > 1
+        True
+
+::
+
+        >>> func_mod = __import__("4-print_square").print_square.__doc__
+        >>> len(func_mod) > 1
+        True
+
+============================================================================
+IMPORTATION OF THE MODULE
+============================================================================
+
+::
+
+        >>> print_square = __import__('4-print_square').print_square
+
+============================================================================
+USAGE
+============================================================================
+
+::
+
+        >>> print_square = __import__('4-print_square').print_square
+	>>> print_square(4)
+	####
+	####
+	####
+	####
+
+::
+
+	>>> print_square(0)
+	
+
+::
+
+	>>> print_square(-3)
+	Traceback (most recent call last):
+	...
+	ValueError: size must be >= 0
+
+::
+
+	>>> print_square(-3.9)
+	Traceback (most recent call last):
+	...
+	TypeError: size must be an integer
+
+::
+	>>> print_square(2.4)
+	Traceback (most recent call last):
+	...
+	TypeError: size must be an integer
