@@ -1,0 +1,68 @@
+============================================================================
+DOCUMENTATION OF ``5-text_indentation`` MODULE
+============================================================================
+============================================================================
+USAGE OF ``text_indentation(text)`` FUNCTION
+============================================================================
+
+============================================================================
+CHECKING FOR DOCUMENTATION OF THE MODULE
+============================================================================
+
+::
+
+        >>> doc_mod = __import__("5-text_indentation").__doc__
+        >>> len(doc_mod) > 1
+        True
+
+::
+
+	>>> func_mod = __import__("5-text_indentation").text_indentation.__doc__
+	>>> len(func_mod) > 1
+        True
+
+============================================================================
+IMPORTATION OF THE MODULE
+============================================================================
+
+::
+
+        >>> text_indentation = __import__('5-text_indentation').text_indentation
+
+============================================================================
+USAGE
+============================================================================
+
+::
+
+	>>> text_indentation("Charles. Musabi?")
+	Charles.
+	<BLANKLINE>
+	 Musabi?
+	<BLANKLINE>
+
+::
+
+	>>> text_indentation("Charles.\n Musabi?")
+	Charles.
+	<BLANKLINE>
+	<BLANKLINE>
+	 Musabi?
+	<BLANKLINE>
+
+============================================================================
+INVALID TEXT
+============================================================================ 
+::
+
+	>>> text_indentation(4)
+	Traceback (most recent call last):
+	...
+	TypeError: text must be a string
+
+::
+
+	>>> text_indentation(None)
+	Traceback (most recent call last):
+	...
+	TypeError: text must be a string
