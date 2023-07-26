@@ -50,6 +50,11 @@ USAGE
 	Musabi?
 	<BLANKLINE>
 
+::
+
+	>>> text_indentation("Charles Musabi") #doctest: +NORMALIZE_WHITESPACE
+	Charles Musabi
+
 ============================================================================
 INVALID TEXT
 ============================================================================ 
