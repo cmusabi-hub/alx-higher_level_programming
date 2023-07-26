@@ -55,6 +55,16 @@ USAGE
 	>>> text_indentation("Charles Musabi") #doctest: +NORMALIZE_WHITESPACE
 	Charles Musabi
 
+::
+
+    >>> text_indentation("          ")
+
+::
+
+    >>> text_indentation("Hello.   ")
+    Hello.
+    <BLANKLINE>
+
 ============================================================================
 INVALID TEXT
 ============================================================================ 
