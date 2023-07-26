@@ -38,7 +38,7 @@ USAGE
 	>>> text_indentation("Charles. Musabi?") #doctest: +NORMALIZE_WHITESPACE
 	Charles.
 	<BLANKLINE>
-	 Musabi?
+	Musabi?
 	<BLANKLINE>
 
 ::
@@ -47,7 +47,7 @@ USAGE
 	Charles.
 	<BLANKLINE>
 	<BLANKLINE>
-	 Musabi?
+	Musabi?
 	<BLANKLINE>
 
 ============================================================================
