@@ -35,7 +35,7 @@ USAGE
 
 ::
 
-	>>> text_indentation("Charles. Musabi?")
+	>>> text_indentation("Charles. Musabi?") #doctest: +NORMALIZE_WHITESPACE
 	Charles.
 	<BLANKLINE>
 	 Musabi?
@@ -43,7 +43,7 @@ USAGE
 
 ::
 
-	>>> text_indentation("Charles.\n Musabi?")
+	>>> text_indentation("Charles.\n Musabi?") #doctest: +NORMALIZE_WHITESPACE
 	Charles.
 	<BLANKLINE>
 	<BLANKLINE>
