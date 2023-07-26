@@ -18,5 +18,8 @@ def text_indentation(text):
             new_char = new_char.strip()
             final_char += new_char + "\n\n"
             new_char = ""
+    new_char = new_char.strip()
+    if new_char:
+        final_char += new_char
 
     print(final_char)
