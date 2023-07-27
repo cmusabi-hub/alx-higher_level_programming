@@ -7,6 +7,7 @@ list_2 = [13]
 empty_list = []
 negative_list = [-5, -30, -3]
 negative_list_2 = [-4]
+max_at_beginning = [4, 3, 2, 1]
 
 class TestMax_integer(unittest.TestCase):
     
@@ -17,6 +18,7 @@ class TestMax_integer(unittest.TestCase):
         self.one_list = list_2
         self.list_negative = negative_list
         self.list_2_negative = negative_list_2
+        self.list_max_begining = max_at_beginning
 
     def test_max_integer(self):
         """Checking for max integer"""
@@ -37,6 +39,10 @@ class TestMax_integer(unittest.TestCase):
     def test_max_integer_one_integer(self):
             """Checking for max integer"""
             self.assertEqual(max_integer(self.one_list), 13)
+    
+    def test_max_at_begginning(self):
+            """Testing a list with a beginning max value."""
+            self.assertEqual(max_integer(self.list_max_begining), 4)
 
 if __name__ == "__main__":
     unittest.main()
