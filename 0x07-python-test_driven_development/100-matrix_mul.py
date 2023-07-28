@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Function that multiplies matrices"""
 
+
 def matrix_mul(m_a, m_b):
     """
     Args:
@@ -15,10 +16,12 @@ def matrix_mul(m_a, m_b):
 
     """
 
-    if not isinstance(m_a, list) or not all(isinstance(row, list) for row in m_a):
+    if not isinstance(m_a, list) or not all(isinstance
+                                            (row, list) for row in m_a):
         raise TypeError("m_a must be a list of lists")
 
-    if not isinstance(m_b, list) or not all(isinstance(row, list) for row in m_b):
+    if not isinstance(m_b, list) or not all(isinstance
+                                            (row, list) for row in m_b):
         raise TypeError("m_b must be a list of lists")
 
     if not all(isinstance(num, (int, float)) for row in m_a for num in row):
@@ -49,9 +52,9 @@ def matrix_mul(m_a, m_b):
         for column in range(len(m_b[0])):
             product_element = 0
             for column_row in range(len(m_a[0])):
-                product_element += m_a[row][column_row] * m_b[column_row][column]
+                product_element += m_a[row][column_row] * \
+                m_b[column_row][column]
             row_list.append(product_element)
         product.append(row_list)
 
     return (product)
-
