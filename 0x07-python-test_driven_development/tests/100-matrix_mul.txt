@@ -142,25 +142,25 @@ not a list, a TypeError is raised.
 
     >>> print(matrix_mul("not a list", [[1, 2]]))
     Traceback (most recent call last):
-    TypeError: m_a must be a list
+    TypeError: m_a must be a list of list
 
 ::
 
     >>> print(matrix_mul([[1, 2]], "also not a list"))
     Traceback (most recent call last):
-    TypeError: m_b must be a list
+    TypeError: m_b must be a list of list
 
 ::
 
     >>> print(matrix_mul("not a list", "also not a list"))
     Traceback (most recent call last):
-    TypeError: m_a must be a list
+    TypeError: m_a must be a list of list
 
 ::
 
     >>> print(matrix_mul(None, None))
     Traceback (most recent call last):
-    TypeError: m_a must be a list
+    TypeError: m_a must be a list of list
 
 ============================================================================================
 ``m_b`` && ``m_a``  *must* be lists of lists!
