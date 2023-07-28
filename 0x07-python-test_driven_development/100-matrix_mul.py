@@ -53,7 +53,7 @@ def matrix_mul(m_a, m_b):
             product_element = 0
             for column_row in range(len(m_a[0])):
                 product_element += m_a[row][column_row] * \
-                m_b[column_row][column]
+                    m_b[column_row][column]
             row_list.append(product_element)
         product.append(row_list)
 
