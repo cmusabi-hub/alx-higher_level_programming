@@ -6,7 +6,7 @@ import numpy as np
 def lazy_matrix_mul(m_a, m_b):
     """
     m_a is first matrix
-    m_b is the secon matrix
+    m_b is the second matrix
     """
     matri_mult = np.dot(m_a, m_b)
 
