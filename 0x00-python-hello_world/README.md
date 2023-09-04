@@ -101,7 +101,6 @@ File: 0-run
     
 1. Run inline
 mandatory
-Score: 65.0% (Checks completed: 100.0%)
 Write a Shell script that runs Python code.
 
 The Python code will be saved in the environment variable $PYCODE
@@ -117,6 +116,8 @@ Directory: 0x00-python-hello_world
 File: 1-run_inline
     
 2. Hello, print
+mandatory
+Write a Python script that prints exactly "Programming is like building a multilingual puzzle, followed by a new line.
 
 Use the function print
 guillaume@ubuntu:~/py/0x00$ ./2-print.py 
@@ -130,7 +131,6 @@ File: 2-print.py
     
 3. Print integer
 mandatory
-Score: 38.89% (Checks completed: 77.78%)
 Complete this source code in order to print the integer stored in the variable number, followed by Battery street, followed by a new line.
 
 You can find the source code here
